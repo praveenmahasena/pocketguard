@@ -12,7 +12,7 @@ export default async function (req:Request,res:Response){
         if(rows.length!=1){
             res.clearCookie('pocketguard_token')
         }
-        res.status(200).json({msg:'horny'})
+        res.status(200).json({msg:''})
     }catch(err){
         res.clearCookie('pocketguard_token')
     }
